@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+pnpm --package=@wdio/cli \
+  --package=@wdio/local-runner \
+  --package=@wdio/mocha-framework \
+  --package=@wdio/spec-reporter \
+  --package=@wdio/globals \
+  --package=@wdio/json-reporter \
+  --package=@wdio/local-runner \
+  dlx wdio run ./wdio.conf.js --spec spec.e2e.js
